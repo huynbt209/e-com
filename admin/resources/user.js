@@ -16,7 +16,7 @@ module.exports = {
       actionType: 'resource',
       icon: 'Apps',
       label: 'Resource statistics',
-      //component: AdminBro.compon,
+      //component: AdminBro.bundle('../components/detailed-stats'),
       handler: async (request, response, data) => {
         return {true: 'ueas'}
       },
@@ -27,7 +27,7 @@ module.exports = {
       label: 'don\'t touch this!!!',
       icon: 'Exit',
       guard: 'You can setup guards before an action - just in case.',
-      //component: AdminBro.require('../components/dont-touch-this-action'),
+      //component: AdminBro.bundle('../components/dont-touch-this-action'),
       handler: async (request, response, data) => {
         return {
           record: data.record.toJSON()
